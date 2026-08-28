@@ -1,11 +1,12 @@
-class Main{
-static int[][] arr= {{11,22,10,12},{77,88,99,33},{34,23,1,2},{5,6,3,4}};
-public static void main(String args[]){
-Main.sort();
-Main.min();
+  class Main{
+            static int[][] arr= {{11,22,10,12},{77,88,99,33},{34,23,1,2},{5,6,3,4}};
+            // static int min;
+        public static void main(String args[]){
+            Main.sort();
+            Main.min();
 
-for(int i = 0; i < arr.length; i++){
-for(int j = 0; j < arr.length; j++){
+            for(int i = 0; i < arr.length; i++){
+                for(int j = 0; j < arr.length; j++){
                     System.out.print(arr[i][j] + " ");
                 }
                 System.out.println("\n");
@@ -30,7 +31,7 @@ for(int j = 0; j < arr.length; j++){
             int min = arr[0][0];
             for(int i = 0; i < arr.length; i++){
                 for(int j = 0; j < arr[i].length; j++){
-                    if(arr[i][j] < min){
+                    if(arr[i][j] > min){
                          min = arr[i][j] ;
                     }
                 }
